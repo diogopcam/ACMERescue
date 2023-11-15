@@ -32,15 +32,19 @@ EXECUTANDO, FINALIZADO, CANCELADO. Quando um atendimento é criado
 fica no estado PENDENTE, quando há uma equipe é alocada fica no estado
 EXECUTANDO, quando o atendimento termina fica no estado FINALIZADO. A
 qualquer momento atendimento pode ser CANCELADO.
+
 • O cálculo do custo de um atendimento é realizado da seguinte forma:
-����� = ����� �� ������ + ����� ��� ������������ + ����� �� ������������
+custo = custo da equipe + custo dos equipamentos + custo de deslocamento
+
 • O custo da equipe é:
-����çã� × 250 × �ú���� �� ������� �� ������
+duração x 250 x número de membros de equipe
+
 • O custo dos equipamentos é:
-����çã� ×;����� ��á��� ��� ������������ �� ������
+duração x somatório do custo diário dos equipamentos da equipe
+
 • Finalmente, o custo de deslocamento é:
-����â���� �� ������������ �� ������ ���� � ������ ×
-(100 × �ú���� �� ������� �� ������ + 10% �� ;����� ��á��� ��� ������������ �� ������)
+distância de deslocamento da equipe para o evento x (100 x número de pessoas da equipe + 10% do somatório do custo diário dos equipamentos da equipe)
+
 A ACMERescue deseja automatizar o seu negócio e quer que o sistema tenha uma tela cíclica
 com o usuário para as seguintes funcionalidades:
 • Cadastrar novo evento (solicita e cadastra os dados de um evento. [Se já houver
