@@ -1,5 +1,5 @@
 # ACMERescue
-Terceiro trabalho avaliativo da disciplina de Porgramação Orientada a Objetos, ministrada pelo professor Marcelo H. Yamaguti.
+Terceiro trabalho avaliativo da disciplina de PrOgramação Orientada a Objetos, ministrada pelo professor Marcelo H. Yamaguti.
 
 Apoios a desastres
 1. Enunciado geral:
