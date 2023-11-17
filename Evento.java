@@ -43,4 +43,8 @@ public class Evento {
 	public double getLongitude() {
 		return longitude;
 	}
+
+	public String eventoToString(){
+		return "\nNome "+getCodigo()+"\nData: "+getData()+"\nLatitude: "+getLatitude()+"\nLongitude: "+getLongitude();
+	}
 }
