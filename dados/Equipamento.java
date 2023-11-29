@@ -8,4 +8,11 @@ public class Equipamento {
 
 	private double custoDia;
 
+	public void setCustoDia(double custoDia) {
+		this.custoDia = custoDia;
+	}
+
+	public double getCustoDia() {
+		return custoDia;
+	}
 }

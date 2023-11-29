@@ -1,12 +1,17 @@
-package dados;
+package dados.eventos;
+import dados.ConfereCodigo;
+import dados.Equipe;
+import dados.Atendimento;
+import dados.StatusAtendimento;
 
-import jdk.jfr.Event;
 
 public class Evento {
 	private String codigo;
 	private String data;
 	private double latitude;
 	private double longitude;
+	private Equipe equipeAtendimento;
+	private StatusAtendimento statusAtendimento;
 	private Atendimento atendimento;
 
 	public Evento(String codigo, String data, double latitude, double longitude){
@@ -15,15 +20,6 @@ public class Evento {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
-
-	public void setAtendimento(Atendimento antedimento) {
-		this.atendimento = antedimento;
-	}
-
-	public Atendimento getAtendimento() {
-		return atendimento;
-	}
-
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
@@ -54,6 +50,22 @@ public class Evento {
 
 	public double getLongitude() {
 		return longitude;
+	}
+
+	public void setEquipeAtendimento(Equipe equipeAtendimento) {
+		this.equipeAtendimento = equipeAtendimento;
+	}
+
+	public Equipe getEquipeAtendimento() {
+		return equipeAtendimento;
+	}
+
+	public void setAtendimento(Atendimento atendimento) {
+		this.atendimento = atendimento;
+	}
+
+	public Atendimento getAtendimento() {
+		return atendimento;
 	}
 
 	public String eventoToString(){
